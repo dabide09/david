@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="david.css">
+</head>
+
+<body>
+
+    <h2>Student Management System</h2>
+
+    <div class="container">
+
+        
+        <div class="form-section">
+
+            <h3 id="formTitle">Register a Student</h3>
+
+            <form id="studentForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="nameInput">Name mo:</label>
+                        <input type="text"
+                               id="nameInput"
+                               placeholder="Enter Student Name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailInput">Email mo:</label>
+                        <input type="email"
+                               id="emailInput"
+                               placeholder="Enter Student Email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseSelect">Program:</label>
+                        <select id="courseSelect" required>
+                            <option value="">Select a Program</option>
+                            <option value="BSIS">BS Information Systems</option>
+                            <option value="BSIT">BS Information Technology</option>
+                            <option value="BSTM">BS Tourism Management</option>
+                            <option value="CRIM">BS Criminology</option>
+                            <option value="NURSING">BS Nursing</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group button-group">
+                        <button type="submit" id="saveBtn">
+                            Add Student
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        
+        <div class="list-section">
+
+            <h3>Student List</h3>
+
+            <table id="studentTable">
+
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Email</th>
+                        <th>Program</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+    
+
+    <script src="david.js"></script>
+
+</body>
+</html>
